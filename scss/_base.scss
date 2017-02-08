@@ -1,3 +1,473 @@
-body {
-	background-color: yellow;
+@font-face {
+font-family: "brown-regular";
+  src: url(../fonts/brown-regular.otf);
 }
+
+
+@font-face {
+font-family: "brown-light";
+  src: url(../fonts/brown-light.otf);
+}
+
+@font-face {
+	font-family:"luculent-bolditalic";
+	src: url(../fonts/luculentbi.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+
+
+	  background: url(../img/grad2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+    font-family: "brown-light";
+
+
+	color: rgba(163,25,68,1);
+
+	// background-image: url('../img/grad1.jpg') center center no-repeat;
+
+
+}
+
+.container {
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+// kerning for header
+.kern {
+	letter-spacing: -1px;
+}
+
+.kern2 {
+	letter-spacing: 2px;
+}
+
+.kern3 {
+	letter-spacing: 2px;
+}
+
+.kern4 {
+	letter-spacing: -1px;
+}
+
+.kern5 {
+	letter-spacing: 2px;
+}
+
+.kern6 {
+	letter-spacing: -6px;
+}
+
+.kern7{
+	letter-spacing: 1px;
+}
+
+
+a:link {
+	text-decoration: none;
+	color:#ec6161;
+}
+
+a:visited {
+	color:#ec6161;
+}
+
+a:hover {
+	color:#efbbbf}
+
+a:active {
+	color:white;
+}
+
+img:hover {
+
+	opacity: .7;
+}
+
+
+#left {
+
+	float: left;
+	position: fixed;
+	width: 55vw;
+	margin-right: 5vw;
+}
+
+.links {
+		margin: 10px;
+
+
+}
+
+.nav {
+	background-color: white;
+}
+
+.nav h2 {
+	display: inline;
+	margin: 0 90px;
+
+}
+
+.nav a:link{
+	text-decoration: none;
+}
+
+.nav a:visited{
+
+}
+
+.nav a:hover{
+
+}
+
+.nav a:active{
+
+
+}
+header {
+	margin-top:25vh;
+	text-align: center;
+	margin-right: 5vw;
+
+}
+
+li {
+	margin-bottom: 4vh;
+}
+
+li a img {
+	max-width: 100%;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.links {
+	margin-left: 10vw;
+	float: right;
+	position: static;
+	margin-top:23px;
+	color:#a31944;
+	cursor: pointer;
+	
+
+
+}
+
+.links a {
+
+	    padding: 5px 7px;
+
+}
+
+.links a:link {
+    color: #a31944;
+    margin-right: 6px;
+    // border-radius: 20px 20px 18px 18px;
+    border: 2px solid #ec6161;
+    background-color: #f1ded7;
+    font-family: 'brown-regular'
+
+}
+
+.links a:visited {
+	color:#ec6161;
+}
+
+.links a:hover {
+	text-transform: lowercase;
+	border: 1px solid #ec6161;
+	color: #ec6161; 
+	font-family: 'brown-light';
+
+
+	span {
+		display: inline;
+
+	}
+}
+
+span.ext {
+
+	display: none;
+}
+
+
+
+
+h1 {
+	font-family: "luculent-bolditalic";
+	font-size: 5vw;
+	word-spacing: -15px;
+	margin-bottom: 5px;
+
+
+}
+
+#right {
+	margin-top: 10vh;
+	float: right;
+		width: 43vw;
+		text-align: left;
+			margin:  5vw;
+
+
+}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 2;
+    position: fixed;
+    // background-color: #e9cbc1;
+
+    }
+
+ul.tab li {float: left;
+}
+
+ul.tab li a {
+    display: inline-table;
+    color: #ec6161;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 14px;
+    border-top: 2px solid #ec6161;
+    border-left: 2px solid #ec6161;
+    margin-right: 3px;
+    border-right: 2px solid #ec6161;
+    border-bottom: 1px solid #a31944 ;
+    text-transform: lowercase;
+    // border-radius: 4px;
+    background-color: rgba(241,222,215,1);
+            // background-color: #e9cbc1;
+
+}
+
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: rgba(241,222,215,1);
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    border-left: 2px solid #a31944 !important;
+    border-right: 2px solid #a31944 !important;
+    border-top: 2px solid #a31944!important;
+    border-bottom: none !important;
+    // background-color: #3b89c7;
+    color: #a31944 !important;
+    padding: 15px 16px !important;
+
+
+}
+
+/* Style the tab content */
+.tabcontent {
+    // padding: 12px;
+    border-left: 2px solid #a31944;
+    border-right: 2px solid #a31944;
+    border-bottom: 2px solid #a31944;
+             		border-top: 2px solid #a31944;
+	background-color: rgba(241,222,215,1);
+	margin-top: 43px;
+	z-index: 1;
+	height: 100vh;
+	    position: fixed;
+
+	    ul {
+    overflow-y: scroll;
+    max-height: 89vh;
+    height: 100%;
+    padding-bottom: 5vh;	    }
+
+
+
+    //      	.topmarg {
+    //      		    width: 58.5%;
+    // background-color: #a31944;
+    // height: 1px;
+    // float: right;
+    // z-index: 0
+
+    //      	}
+
+}
+
+.tabcontent ul::-webkit-scrollbar { 
+    display: none; 
+}
+
+h2 {
+
+	font-family: "brown-light";
+    text-transform: uppercase;
+	color: #ec6161;
+	font-size: 14px;
+	letter-spacing: 3px;
+	margin-top: 0px;
+
+
+}
+
+p {
+	display: block;
+}
+
+ul {
+	list-style-type: none;
+	    padding: 8px 24px;
+	    position: relative;
+
+}
+
+
+
+// ul li a {
+
+// text-decoration: none;
+
+// }
+
+@media only screen and (max-width: 768px) {
+
+body {
+	background: url(../img/grad2.jpg) no-repeat center top fixed; 
+	background-size: 106vh;
+}
+
+	#left {
+
+	float: none;
+	position: static;
+	width: 100vw;
+
+	header {
+	text-align: center;
+		margin-top: 20vh;
+		margin-bottom: 20vh;
+		h1 {
+			font-size: 14vw;
+		}
+	}
+
+}
+
+	#right {
+
+	float: none;
+	position: static;
+	width: 100vw;
+	margin-left: 0;
+	margin-right: 0;
+
+	ul {
+	overflow-y: scroll;
+    max-height: 400px;
+    height: 100%;
+		
+
+		li {
+			text-align: left;
+
+			img{
+			width: 100vw;
+			margin-left: auto;
+		margin-right: auto;
+	}
+		}
+
+	}
+}
+}
+
+@media only screen and (max-width: 450px) {
+
+body {
+	background: url(../img/grad2.jpg) no-repeat center top fixed; 
+	background-size: 106vh;
+}
+
+	#left {
+
+	float: none;
+	position: static;
+	width: 100vw;
+
+	header {
+	text-align: center;
+		margin-top: 20vh;
+		margin-bottom: 20vh;
+		h1 {
+			font-size: 14vw;
+		}
+	}
+
+}
+
+	#right {
+
+
+
+	float: none;
+	position: static;
+	width: 100vw;
+	margin-left: 0;
+	margin-right: 0;
+
+	ul {
+	overflow-y: scroll;
+    max-height: 400px;
+    height: 100%;
+
+		
+
+		li {
+			text-align: left;
+
+			img{
+			width: 100vw;
+			margin-left: auto;
+		margin-right: auto;
+	}
+		}
+
+	}
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+

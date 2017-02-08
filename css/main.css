@@ -1,4 +1,410 @@
-/* line 1, ../scss/_base.scss */
+@font-face {
+  font-family: "brown-regular";
+  src: url(../fonts/brown-regular.otf);
+}
+@font-face {
+  font-family: "brown-light";
+  src: url(../fonts/brown-light.otf);
+}
+@font-face {
+  font-family: "luculent-bolditalic";
+  src: url(../fonts/luculentbi.ttf);
+}
+/* line 17, ../scss/_base.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 21, ../scss/_base.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* line 27, ../scss/_base.scss */
 body {
-  background-color: yellow;
+  background: url(../img/grad2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "brown-light";
+  color: #a31944;
+}
+
+/* line 47, ../scss/_base.scss */
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 56, ../scss/_base.scss */
+.kern {
+  letter-spacing: -1px;
+}
+
+/* line 60, ../scss/_base.scss */
+.kern2 {
+  letter-spacing: 2px;
+}
+
+/* line 64, ../scss/_base.scss */
+.kern3 {
+  letter-spacing: 2px;
+}
+
+/* line 68, ../scss/_base.scss */
+.kern4 {
+  letter-spacing: -1px;
+}
+
+/* line 72, ../scss/_base.scss */
+.kern5 {
+  letter-spacing: 2px;
+}
+
+/* line 76, ../scss/_base.scss */
+.kern6 {
+  letter-spacing: -6px;
+}
+
+/* line 80, ../scss/_base.scss */
+.kern7 {
+  letter-spacing: 1px;
+}
+
+/* line 85, ../scss/_base.scss */
+a:link {
+  text-decoration: none;
+  color: #ec6161;
+}
+
+/* line 90, ../scss/_base.scss */
+a:visited {
+  color: #ec6161;
+}
+
+/* line 94, ../scss/_base.scss */
+a:hover {
+  color: #efbbbf;
+}
+
+/* line 97, ../scss/_base.scss */
+a:active {
+  color: white;
+}
+
+/* line 101, ../scss/_base.scss */
+img:hover {
+  opacity: .7;
+}
+
+/* line 107, ../scss/_base.scss */
+#left {
+  float: left;
+  position: fixed;
+  width: 55vw;
+  margin-right: 5vw;
+}
+
+/* line 115, ../scss/_base.scss */
+.links {
+  margin: 10px;
+}
+
+/* line 121, ../scss/_base.scss */
+.nav {
+  background-color: white;
+}
+
+/* line 125, ../scss/_base.scss */
+.nav h2 {
+  display: inline;
+  margin: 0 90px;
+}
+
+/* line 131, ../scss/_base.scss */
+.nav a:link {
+  text-decoration: none;
+}
+
+/* line 147, ../scss/_base.scss */
+header {
+  margin-top: 25vh;
+  text-align: center;
+  margin-right: 5vw;
+}
+
+/* line 154, ../scss/_base.scss */
+li {
+  margin-bottom: 4vh;
+}
+
+/* line 158, ../scss/_base.scss */
+li a img {
+  max-width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* line 164, ../scss/_base.scss */
+.links {
+  margin-left: 10vw;
+  float: right;
+  position: static;
+  margin-top: 23px;
+  color: #a31944;
+  cursor: pointer;
+}
+
+/* line 176, ../scss/_base.scss */
+.links a {
+  padding: 5px 7px;
+}
+
+/* line 182, ../scss/_base.scss */
+.links a:link {
+  color: #a31944;
+  margin-right: 6px;
+  border: 2px solid #ec6161;
+  background-color: #f1ded7;
+  font-family: "brown-regular";
+}
+
+/* line 192, ../scss/_base.scss */
+.links a:visited {
+  color: #ec6161;
+}
+
+/* line 196, ../scss/_base.scss */
+.links a:hover {
+  text-transform: lowercase;
+  border: 1px solid #ec6161;
+  color: #ec6161;
+  font-family: 'brown-light';
+}
+/* line 203, ../scss/_base.scss */
+.links a:hover span {
+  display: inline;
+}
+
+/* line 209, ../scss/_base.scss */
+span.ext {
+  display: none;
+}
+
+/* line 217, ../scss/_base.scss */
+h1 {
+  font-family: "luculent-bolditalic";
+  font-size: 5vw;
+  word-spacing: -15px;
+  margin-bottom: 5px;
+}
+
+/* line 226, ../scss/_base.scss */
+#right {
+  margin-top: 10vh;
+  float: right;
+  width: 43vw;
+  text-align: left;
+  margin: 5vw;
+}
+
+/* line 236, ../scss/_base.scss */
+ul.tab {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 2;
+  position: fixed;
+}
+
+/* line 247, ../scss/_base.scss */
+ul.tab li {
+  float: left;
+}
+
+/* line 250, ../scss/_base.scss */
+ul.tab li a {
+  display: inline-table;
+  color: #ec6161;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 14px;
+  border-top: 2px solid #ec6161;
+  border-left: 2px solid #ec6161;
+  margin-right: 3px;
+  border-right: 2px solid #ec6161;
+  border-bottom: 1px solid #a31944;
+  text-transform: lowercase;
+  background-color: #f1ded7;
+}
+
+/* Change background color of links on hover */
+/* line 272, ../scss/_base.scss */
+ul.tab li a:hover {
+  background-color: #f1ded7;
+}
+
+/* Create an active/current tablink class */
+/* line 276, ../scss/_base.scss */
+ul.tab li a:focus, .active {
+  border-left: 2px solid #a31944 !important;
+  border-right: 2px solid #a31944 !important;
+  border-top: 2px solid #a31944 !important;
+  border-bottom: none !important;
+  color: #a31944 !important;
+  padding: 15px 16px !important;
+}
+
+/* Style the tab content */
+/* line 289, ../scss/_base.scss */
+.tabcontent {
+  border-left: 2px solid #a31944;
+  border-right: 2px solid #a31944;
+  border-bottom: 2px solid #a31944;
+  border-top: 2px solid #a31944;
+  background-color: #f1ded7;
+  margin-top: 43px;
+  z-index: 1;
+  height: 100vh;
+  position: fixed;
+}
+/* line 301, ../scss/_base.scss */
+.tabcontent ul {
+  overflow-y: scroll;
+  max-height: 89vh;
+  height: 100%;
+  padding-bottom: 5vh;
+}
+
+/* line 320, ../scss/_base.scss */
+.tabcontent ul::-webkit-scrollbar {
+  display: none;
+}
+
+/* line 324, ../scss/_base.scss */
+h2 {
+  font-family: "brown-light";
+  text-transform: uppercase;
+  color: #ec6161;
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin-top: 0px;
+}
+
+/* line 336, ../scss/_base.scss */
+p {
+  display: block;
+}
+
+/* line 340, ../scss/_base.scss */
+ul {
+  list-style-type: none;
+  padding: 8px 24px;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 357, ../scss/_base.scss */
+  body {
+    background: url(../img/grad2.jpg) no-repeat center top fixed;
+    background-size: 106vh;
+  }
+
+  /* line 362, ../scss/_base.scss */
+  #left {
+    float: none;
+    position: static;
+    width: 100vw;
+  }
+  /* line 368, ../scss/_base.scss */
+  #left header {
+    text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+  }
+  /* line 372, ../scss/_base.scss */
+  #left header h1 {
+    font-size: 14vw;
+  }
+
+  /* line 379, ../scss/_base.scss */
+  #right {
+    float: none;
+    position: static;
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 387, ../scss/_base.scss */
+  #right ul {
+    overflow-y: scroll;
+    max-height: 400px;
+    height: 100%;
+  }
+  /* line 393, ../scss/_base.scss */
+  #right ul li {
+    text-align: left;
+  }
+  /* line 396, ../scss/_base.scss */
+  #right ul li img {
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 450px) {
+  /* line 409, ../scss/_base.scss */
+  body {
+    background: url(../img/grad2.jpg) no-repeat center top fixed;
+    background-size: 106vh;
+  }
+
+  /* line 414, ../scss/_base.scss */
+  #left {
+    float: none;
+    position: static;
+    width: 100vw;
+  }
+  /* line 420, ../scss/_base.scss */
+  #left header {
+    text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+  }
+  /* line 424, ../scss/_base.scss */
+  #left header h1 {
+    font-size: 14vw;
+  }
+
+  /* line 431, ../scss/_base.scss */
+  #right {
+    float: none;
+    position: static;
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 441, ../scss/_base.scss */
+  #right ul {
+    overflow-y: scroll;
+    max-height: 400px;
+    height: 100%;
+  }
+  /* line 448, ../scss/_base.scss */
+  #right ul li {
+    text-align: left;
+  }
+  /* line 451, ../scss/_base.scss */
+  #right ul li img {
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

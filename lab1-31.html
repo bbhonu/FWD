@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lab 1-31</title>
+</head>
+<body>
+
+Fav color:<div id="yes"></div>
+Least fav color:<div id="no"></div>
+
+
+<script type="text/javascript">
+
+// display word
+var fav=document.getElementById('yes');
+var notfav=document.getElementById('no');
+
+
+yes=prompt("What's your favorite color?");
+no=prompt("What's your least favorite color?")
+
+fav.textContent=yes;
+notfav.textContent=no;
+
+// changes color
+var color1=yes;
+var color2=no;
+
+fav.style.color=color1;
+notfav.style.color=color2;
+
+
+// var newp=document.createElement("p");
+// var newp2=document.createElement("p");
+// yes.appendChild('newp');
+// no.appendChild('newp2');
+
+
+</script>
+</body>
+
+</html>

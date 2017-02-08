@@ -3,9 +3,96 @@
 <head>
 	<meta charset="UTF-8">
 	 <link rel="stylesheet" href="css/main.css">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+        <link rel="icon" href="img/favicon.ico">
+      
+
 	<title>FWD Hannah Vine</title>
 </head>
-<body>
-	testing
+<body class="container">
+<div id="left">
+
+
+    <header><h1><span class="kern">h<span class="kern2">a</span><span class="kern3">n<span class="kern4">n</span></span><span class="kern5">a</span>h</span>  <span class= "kern6">vi<span class="kern7">n</span>e</span></h1>
+ <h2>Front-end Web Design</h2>
+    </header>
+   </div> <!--    end links-->
+
+   <div id="right">
+
+   		<ul class="tab"> 
+   		<li><a href="javascript:void(0)" class="tablinks" onclick="openSection(event, 'Projects')" id="defaultOpen">Projects</a></li>
+   		<li><a href="javascript:void(0)" class="tablinks" onclick="openSection(event, 'Labs')">Labs</a></li>
+   			<div class="links">
+	<a href="http://hannahvinefwd.wordpress.com" target="out">B<span class="ext">LOG</a>
+<!-- 	b hover log
+ -->	<a href="http://github.com/hannahvine" target="out">G<span class="ext" target="out">ITHUB</a>
+	<!-- g hover github? -->
+	</div>
+
+   		</ul>
+	<section id ="Projects" class="tabcontent"><div class="topmarg"></div>
+
+
+		<ul>
+			<li><a href="#""><img src="http://placehold.it/400x250" alt="" target="out">project caption</a></li>
+			<li><a href="#""><img src="http://placehold.it/400x250" alt="" target="out">project caption</a></li>
+			<li><a href="#""><img src="http://placehold.it/400x250" alt="" target="out">project caption</a></li>
+			<li><a href="#""><img src="http://placehold.it/400x250" alt="" target="out">project caption</a></li>
+		
+
+		</ul>
+
+	</section>
+
+		<section id ="Labs" class="tabcontent">
+
+		<ul>
+			<li><a href="#""><img src="http://placehold.it/400x250" alt="" target="out">lab  caption</a></li>
+			<li><a href="#""><img src="http://placehold.it/400x250" alt="" target="out">lab caption</a></li>
+			<li><a href="#""><img src="http://placehold.it/400x250" alt="" target="out">lab caption</a></li>
+			<li><a href="#""><img src="http://placehold.it/400x250" alt="" target="out">lab caption</a></li>
+		
+
+		</ul>
+
+	</section>
+
+
+	</div> <!-- end content div -->
+
+	  <script type="text/javascript">
+
+	  function openSection(evt, sectionName) {
+
+
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(sectionName).style.display = "block";
+    evt.currentTarget.className += " active";
+
+}
+
+    document.getElementById("defaultOpen").click();
+
+
+</script>
+
+
 </body>
 </html>
