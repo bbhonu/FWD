@@ -1,0 +1,323 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+    *, *:before, *:after {
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "circular-book";
+  src: url(../fonts/circular-book.otf);
+}
+
+h1 {
+	font-size: 50px;
+	margin: 0px 25px;
+
+}
+
+body {
+  line-height: 1;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "circular-book";
+  color: #3c3939;
+}
+
+input{
+    background-color: #f36f7e;
+    border: 0px;
+    width: 210px;
+    font-size: 18px;
+    height: 40px;
+    color: white;
+    padding: 10px;
+    /* margin-right: 10px; */
+    font-family: "circular-book";
+}
+
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#intro {
+	margin-top: -45px;
+}
+
+#intro p {
+	font-size: 25px;
+	max-width: 70vw;
+	margin: 25px auto;
+
+}
+
+#introlast {
+	margin-bottom: 65px !important;
+}
+
+
+
+
+
+
+.question {
+	margin-bottom: 50px;
+	max-width: 60vw;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 25px;
+}
+
+.fact {
+
+    /* margin-top: 50px; */
+    /* margin-bottom: 50px; */
+    padding: 35px 20vw;
+    margin: 60px auto 0 auto;
+    font-size: 16px;
+    color: white;
+    line-height: 22px;
+    background-color: rgba(52, 62, 162, 0.4);
+}
+
+#submission h4 {
+	color: #343ea2;
+	font-size: 24px;
+	margin-bottom: 20px;
+
+}
+
+#submityoname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-input-placeholder {
+	color: white;
+}
+
+#sendname {
+	width: 8vw;
+		font-size: 18px;
+	color: #343ea2;
+		cursor: pointer;
+		text-transform: uppercase;
+		font-style: italic;
+		padding: 0px 10px;
+
+
+
+}
+
+#done p {
+	max-width: 70vw;
+
+	margin: 30px auto;
+}
+
+#leaderboard {
+	padding: 30px 0px;
+	border-top: solid 1px #343ea2;
+	border-bottom: solid 1px #343ea2;
+
+}
+
+#theboard {
+	max-width: 40vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	background-color: rgba(52, 62, 162, 0.4);
+	padding: 50px;
+
+	div {
+		padding: 10px;
+	}
+
+	p {
+		margin: 35px;
+		border-bottom: solid 1px #343ea2;
+	}
+
+
+	h5 {
+		color: #343ea2;
+		font-weight: bolder;
+		text-transform: uppercase;
+	}
+
+
+	    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.next {
+	font-size: 18px;
+	background-color: #343ea2;
+	padding:15px;
+	color: white;
+		cursor: pointer;
+		text-transform: uppercase;
+		font-style: italic;
+
+
+
+}
+
+#score p {
+	font-size: 20px;
+}
+
+#showsources {
+		margin-top: 100px;
+
+}
+
+#sources {
+	text-transform: uppercase;
+
+	a {
+		text-decoration: none;
+	}
+
+	a:link {
+		color: #343ea2;
+	}
+
+	a:hover {
+		opacity: .6;
+	}
+}
+
+
+h1 img {
+	max-width: 100%;
+}
+
+#fullscore {
+	font-size: 28px;
+}
+
+.next:hover {
+	opacity: .6;
+}
+
+.answers {
+	display: flex;
+	justify-content: center;
+
+
+}
+
+.answers p {
+	font-size: 18px;
+	background-color: #343ea2;
+	padding:15px;
+	color: white;
+	margin: 15px;
+	cursor: pointer;
+}
+
+p {
+	margin: 50px;
+}
+
+.answers p:hover {
+	opacity: .6;
+}
+
+@media only screen and (max-width: 700px) {
+
+	#theboard {
+		max-width: 100vw;
+	}
+
+	.answers {
+		flex-direction: column;
+	}
+
+
+
+	.fact {
+		width: 100vw;
+		font-size: 25px;
+		line-height: 33px;
+		 padding: 34px 6vw;
+	}
+
+	.question {
+				max-width: 100vw;
+						 padding: 0px 6vw;
+						 line-height: 33px;
+
+						 p {
+						 	margin: 0px;
+						}
+
+
+
+	}
+
+		.next {
+		padding: 30px 15px ;
+	}
+
+	#done p {
+		max-width: 90vw;
+	}
+
+
+}
+
+
+
+
